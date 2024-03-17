@@ -1,0 +1,14 @@
+
+  <div class="caclulator">
+    <h1 class="calc_name">Angular caclulator</h1>
+    <input class="calc_input" type="number" [(ngModel)]="first"/>
+    <select name="" id="" [(ngModel)]="defaultOption">
+      <option  *ngFor="let defaultOption of calcElement" [value]="defaultOption">
+        {{ defaultOption }}
+      </option>
+    </select>
+    <input class="calc_input" type="number" [(ngModel)]="second"/>
+    <span>{{ result ?? '' }}</span>
+    <button (click)="calc()">Расчитать</button>
+  </div>
+
